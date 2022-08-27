@@ -4,10 +4,14 @@ import { faker } from '@faker-js/faker'
 const firstName = faker.name.firstName()
 const lastName = faker.name.lastName()
 const fullName = `${firstName} ${lastName}`
+
+const selectCard = () => {
+  console.log(`${fullName} selected`)
+}
 </script>
 
 <template>
-  <figure class="card">
+  <figure class="card" @click="selectCard">
     <img class="profile" :src="faker.image.avatar()" alt="avatar" />
     <div class="card-text">
       <blockquote>
@@ -28,7 +32,7 @@ const fullName = `${firstName} ${lastName}`
 
 <style lang="postcss" scoped>
 .card {
-  @apply bg-slate-100 rounded-xl p-8 shadow-md overflow-hidden;
+  @apply bg-slate-100 rounded-xl p-8 shadow-md overflow-hidden cursor-pointer hover:scale-110 transition duration-300 hover:shadow-slate-900 hover:shadow-2xl;
   .profile {
     @apply rounded-full mx-auto object-contain;
   }

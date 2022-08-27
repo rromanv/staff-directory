@@ -22,7 +22,7 @@ const title = ref('Staff Directory 👍')
 nav {
   @apply bg-slate-900 text-slate-200 flex justify-between items-center h-20;
   .wrapper {
-    @apply flex justify-between items-center w-full max-w-7xl mx-auto;
+    @apply flex justify-between items-center container mx-auto py-4;
     .brand {
       @apply flex items-center;
     }
