@@ -11,9 +11,11 @@
     "format": "prettier --write \"src/**/*.{js,jsx,ts,tsx,vue}\""
   },
   "dependencies": {
+    "@vueuse/core": "^9.1.1",
     "vue": "^3.2.37"
   },
   "devDependencies": {
+    "@faker-js/faker": "^7.4.0",
     "@vitejs/plugin-vue": "^3.0.0",
     "autoprefixer": "^10.4.8",
     "eslint": "^8.23.0",
