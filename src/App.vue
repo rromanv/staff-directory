@@ -1,10 +1,16 @@
 <script setup>
-  import { ref } from 'vue'
-  const title = ref('Hello There ✋')
+import NavBar from './components/NavBar.vue'
 </script>
 
 <template>
-  <main class="flex justify-center min-h-screen items-center">
-    <h1 class="text-6xl font-thin text-slate-800">{{ title }}</h1>
+  <NavBar />
+  <main>
+    <h1>pHi</h1>
+    <p>
+      Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ducimus dolorum
+      ex ad debitis cupiditate tenetur facilis, repellat perferendis officia
+      maiores nihil ratione dignissimos, voluptate cum saepe aliquam minus
+      mollitia porro?
+    </p>
   </main>
 </template>
