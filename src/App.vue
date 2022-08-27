@@ -5,7 +5,5 @@ import Cards from './components/Cards.vue'
 
 <template>
   <NavBar />
-  <main>
-    <Cards />
-  </main>
+  <Cards />
 </template>
